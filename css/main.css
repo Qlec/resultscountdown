@@ -1,0 +1,53 @@
+:root {
+    --background: #201E1F;
+    --secondary: #8D99AE;
+    --highlight: #EDF2F4;
+    --accent: #EF233C;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Coolvetica, -apple-system, 'Segoe UI', Verdana, sans-serif;
+}
+
+head, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--highlight);
+}
+
+div.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.countdown-subcontainer {
+    max-width: 1000px;
+}
+
+span.countdown-primary-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+h1.countdown-secondary-text {
+    font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+    div.countdown-container {
+        padding: 0 10vw;
+    }
+
+    span.countdown-primary-text {
+        font-size: 35px;
+    }
+}
